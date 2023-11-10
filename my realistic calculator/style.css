@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: skyblue;
+}
+.container{
+    display: inline;
+    width:max-content;
+    height: max-content;
+    background-color: rgb(68, 58, 58);
+    border-radius: 10px 10px;
+    box-shadow: black 10px 0px 10px;
+}
+.header{
+    display: flex;
+    padding: 10px 15px;
+}
+.left-layout{
+     display: flex;
+     align-items: center;
+     font-size: 15px; 
+}
+.fa-regular{
+    font-size: small;
+    margin-left:3px
+}
+.right-layout{
+    text-align: center;
+    display: inline;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 15   px; 
+    font-family: sans-serif;
+}
+.line{
+    border-radius: 10px;
+    border-color: white;
+    outline: none;
+}
+
+.calculator{
+    background-color: rgb(68, 58, 58);
+    padding: 20px;
+    border-radius:10px;
+}
+
+form .calculator input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0) -5px 0px 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    background-color: rgb(17, 17, 17);
+    margin:10px;
+    cursor: pointer;
+}
+
+.plus{
+    height: 60px;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+}
+
+form .display input{
+    text-align:right;
+    flex:1;
+    font-size:40px;
+    margin-top: 0;
+    width: 100px;
+    height:50px;
+    box-shadow: none;
+    background-color: rgb(152, 212, 170);
+}
+
+form input.ce-button{
+    background-color: orangered;
+}
+
+form .calculator .input-display{
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+

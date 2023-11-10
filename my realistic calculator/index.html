@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realistic calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4029656cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form class="container">
+        <div class="header">
+            <div class="left-layout">
+                <h1>CLTLLZEN</h1>
+            </div>
+            <div>
+                <i class="far fa-registered" style="color: #ffffff;"></i>
+            </div>
+            <div class="right-layout">
+                <h4>CT 210</h4>
+                <hr class="line">
+                <h4>AUTO POWER OFF</h4>
+            </div>
+        </div>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" name="display" class="input-display" id="display">
+            </div>
+            <div>
+                <input type="button" value="C/CE" class="ce-button" onclick="clearDisplay()">
+                <input type="button" value="+/-" onclick="toggleSign()">
+                <input type="button" value="√" onclick="calculateSquareRoot()">
+                <input type="button" value="%" onclick="appendCharacter('%')">
+            </div>
+            <div>
+                <input type="button" value="MRC" onclick="recallMemory()">
+                <input type="button" value="M-" onclick="subtractFromMemory()">
+                <input type="button" value="M+" onclick="addToMemory()">
+                <input type="button" value="/" onclick="appendCharacter('/')">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="appendCharacter('7')">
+                <input type="button" value="8" onclick="appendCharacter('8')">
+                <input type="button" value="9" onclick="appendCharacter('9')">
+                <input type="button" value="x" onclick="appendCharacter('*')">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="appendCharacter('4')">
+                <input type="button" value="5" onclick="appendCharacter('5')">
+                <input type="button" value="6" onclick="appendCharacter('6')">
+                <input type="button" value="-" onclick="appendCharacter('-')">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="appendCharacter('1')">
+                <input type="button" value="2" onclick="appendCharacter('2')">
+                <input type="button" value="3" onclick="appendCharacter('3')">
+                <input type="button" value="+" onclick="appendCharacter('+')">
+            </div>
+            <div>
+                <input type="button" value="0" onclick="appendCharacter('0')">
+                <input type="button" value="00" onclick="appendCharacter('00')">
+                <input type="button" value="." onclick="appendCharacter('.')">
+                <input type="button" value="=" onclick="calculateResult()">
+            </div>
+        </div>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
